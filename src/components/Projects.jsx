@@ -1,22 +1,36 @@
 import React from 'react'
 import Project from './Project'
 const Projects = () => {
-  const todoUrl = 'https://github.com/NikkiDev/eAcademy-react-todo'
-  const outsideUrl =
-    'https://github.com/NikkiDev/eAcademy-popup-with-handling-outside-click'
-  const contextUrl = 'https://github.com/NikkiDev/eAcademy-context-menu'
-  const twitterUrl =
-    'https://github.com/NikkiDev/eAcademy-imitated-twitter-posts'
-  const profileUrl = 'https://github.com/NikkiDev/eAcademy-portfolio'
+  const projects = [
+    {
+      name: 'React To-Do',
+      url: 'https://github.com/NikkiDev/eAcademy-react-todo',
+    },
+    {
+      name: 'React Outside Click',
+      url:
+        'https://github.com/NikkiDev/eAcademy-popup-with-handling-outside-click',
+    },
+    {
+      name: 'React Context-Menu',
+      url: 'https://github.com/NikkiDev/eAcademy-context-menu',
+    },
+    {
+      name: 'React Twitter Post',
+      url: 'https://github.com/NikkiDev/eAcademy-imitated-twitter-posts',
+    },
+    {
+      name: 'React Portfolio',
+      url: 'https://github.com/NikkiDev/eAcademy-portfolio',
+    },
+  ]
 
   return (
     <div className='projects'>
       <h1>projects done</h1>
-      <Project url={todoUrl} name={'React To-Do'} />
-      <Project url={outsideUrl} name={'React Outside Click'} />
-      <Project url={contextUrl} name={'React Context-Menu'} />
-      <Project url={twitterUrl} name={'React Twitter Post'} />
-      <Project url={profileUrl} name={'React Twitter Post'} />
+      {projects.map((project) => {
+        return <Project url={project.url} name={project.name} />
+      })}
     </div>
   )
 }
