@@ -6,22 +6,22 @@ const Navbar = () => {
       <ul className='nav-list'>
         <li className='list-item'>
           <Link to='/'>
-            <span>home</span>
+            <span>{`<home />`}</span>
           </Link>
         </li>
         <li className='list-item'>
           <Link to='/about'>
-            <span>about me</span>
+            <span>{`<about me />`}</span>
           </Link>
         </li>
         <li className='list-item'>
           <Link to='/projects'>
-            <span>projects</span>
+            <span>{`<projects />`}</span>
           </Link>
         </li>
         <li className='list-item'>
           <Link to='/contact'>
-            <span>contact</span>
+            <span>{`<contact />`}</span>
           </Link>
         </li>
       </ul>

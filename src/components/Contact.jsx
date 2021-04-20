@@ -18,6 +18,11 @@ const Contact = () => {
           <SiGithub />
         </a>
       </div>
+      <div className='contact-icon'>
+        <a href='mailto:gameworlddeveloper@gmail.com'>
+          <SiGmail />
+        </a>
+      </div>
     </div>
   )
 }

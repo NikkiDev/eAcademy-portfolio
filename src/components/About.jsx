@@ -7,9 +7,10 @@ const About = () => {
         <img src='#' alt='profile' />
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque
+        {`
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque
         quas consectetur maxime corrupti pariatur accusamus illum! Illo
-        accusantium dolor deserunt tenetur, beatae veritatis ex.
+        accusantium dolor deserunt tenetur, beatae veritatis ex.<p/>`}
       </p>
     </div>
   )
