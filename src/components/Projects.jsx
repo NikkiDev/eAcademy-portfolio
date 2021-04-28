@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Project from './Project'
+import anime from 'animejs/lib/anime.es.js'
 const Projects = () => {
   const projects = [
     {
@@ -36,7 +37,28 @@ const Projects = () => {
       img:
         'https://d33wubrfki0l68.cloudfront.net/607cd37939599b369e421e3e/screenshot_2021-04-19-00-50-06-0000.png',
     },
+    {
+      name: 'React Quizz App',
+      github: 'https://github.com/NikkiDev/eAcademy-quiz-app-final-project',
+      img:
+        'https://d33wubrfki0l68.cloudfront.net/608ab99d32540d3bd1f73bdc/screenshot_2021-04-29-13-52-07-0000.png',
+    },
   ]
+  useEffect(() => {
+    var tl = anime.timeline({
+      easing: 'easeOutExpo',
+      duration: 750,
+    })
+    tl.add({
+      targets: 'h1',
+      opacity: 1,
+    })
+    tl.add({
+      targets: '.project-container .proj',
+      opacity: 1,
+      delay: anime.stagger(125),
+    })
+  }, [])
 
   return (
     <div className='projects'>
@@ -44,7 +66,7 @@ const Projects = () => {
       <div className='project-container'>
         {projects.map((project, idx) => {
           return (
-            <div key={idx}>
+            <div className='proj' key={idx}>
               <Project
                 urlGit={project.github}
                 urlNet={project.netlify}

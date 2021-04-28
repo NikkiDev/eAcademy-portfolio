@@ -13,9 +13,19 @@ $letter-spacing: 5px;
 }
 
 body {
-  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+CjxmaWx0ZXIgaWQ9Im4iPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjciIG51bU9jdGF2ZXM9IjEwIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KPC9maWx0ZXI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMiI+PC9yZWN0Pgo8L3N2Zz4=');
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+CjxmaWx0ZXIgaWQ9Im4iPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjQiIG51bU9jdGF2ZXM9IjEwIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KPC9maWx0ZXI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMiI+PC9yZWN0Pgo8L3N2Zz4=');
+  animation: animate 0.5s linear infinite;
+
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
   }
 }
 .nav-container {
@@ -28,7 +38,7 @@ body {
     text-align: end;
     .list-item {
       padding: 1rem;
-      transition: 0.3s all ease;
+      transition: all 0.3s ease-out;
       &:hover {
         color: #fff;
         transform: scale(1.1);
@@ -58,12 +68,17 @@ body {
     text-shadow: 3px 4px 2px #1bc4ce;
     letter-spacing: $letter-spacing;
     font-style: italic;
+    transform: translate(-1000px);
+    transition: all 1s ease;
+    opacity: 0;
   }
   h4 {
     text-shadow: 2px 2px 2px #1bc4ce;
     letter-spacing: $letter-spacing;
     text-transform: lowercase;
     font-family: $font-secondary;
+    transition: all 0.7s ease;
+    opacity: 0;
   }
 }
 .about {
@@ -86,6 +101,8 @@ body {
     font-size: 3rem;
     color: white;
     margin: 20px;
+    transition: all 1s ease;
+    opacity: 0;
   }
 }
 .project-container {
@@ -93,6 +110,10 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+}
+.proj {
+  opacity: 0;
+  transition: opacity 0.7s;
 }
 .project {
   text-transform: lowercase;
