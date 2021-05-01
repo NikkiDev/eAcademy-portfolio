@@ -14,13 +14,13 @@ const Project = (props) => {
         <span className='project-icons'>
           <SiNetlify />
         </span>
-        Live Demo
+        <p>Live Demo</p>
       </a>
       <a href={props.urlGit}>
         <span className='project-icons'>
           <SiGithub />
         </span>
-        Source
+        <p>Source</p>
       </a>
     </div>
   )

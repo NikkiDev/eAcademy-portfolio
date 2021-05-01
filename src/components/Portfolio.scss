@@ -128,9 +128,10 @@ body {
 .project-container {
   display: flex;
   justify-content: center;
-
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  max-height: 100vh;
 }
 .proj {
   opacity: 0;
@@ -163,6 +164,15 @@ body {
     text-decoration: none;
     padding: 1em;
     font-size: 1.3rem;
+
+    p {
+      display: inline-block;
+      transition: 0.3s all ease;
+      margin: 5px;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
   }
   .project-icons {
     color: white;

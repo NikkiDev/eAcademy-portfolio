@@ -26,18 +26,23 @@ const Projects = () => {
     {
       name: 'React Twitter Post',
       github: 'https://github.com/NikkiDev/eAcademy-imitated-twitter-posts',
+      netlify: 'https://e-academy-twitter.netlify.app',
+
       img:
         'https://d33wubrfki0l68.cloudfront.net/6090334b68a5b40da9065eb1/screenshot_2021-05-03-17-32-27-0000.png',
     },
     {
       name: 'React Portfolio',
       github: 'https://github.com/NikkiDev/eAcademy-portfolio',
+      netlify: 'https://e-academy-portfolio.netlify.app',
       img:
         'https://d33wubrfki0l68.cloudfront.net/608d13e2425be5f93eca9c44/screenshot_2021-05-01-08-41-22-0000.png',
     },
     {
       name: 'React Quizz App',
+
       github: 'https://github.com/NikkiDev/eAcademy-quiz-app-final-project',
+      netlify: 'https://eacademy-react-quiz-app.netlify.app',
       img:
         'https://d33wubrfki0l68.cloudfront.net/608ab99d32540d3bd1f73bdc/screenshot_2021-04-29-13-52-07-0000.png',
     },
