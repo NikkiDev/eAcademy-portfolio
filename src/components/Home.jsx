@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react'
 import anime from 'animejs/lib/anime.es.js'
-import Contact from './Contact'
-import Projects from './Projects'
 const Home = () => {
   useEffect(() => {
     var tl = anime.timeline({
