@@ -21,12 +21,21 @@ const Home = () => {
   return (
     <div>
       <div className='home'>
-        <h1>Nikoloz Chachanidze</h1>
-        <h4>{`<front-end developer/>`}</h4>
+        <h1>
+          {' '}
+          <i className='tag'>{`<h1>`}</i>
+          Nikoloz Chachanidze
+          <i className='tag'>{`<h1/>`}</i>
+        </h1>
+        <h4>
+          <i className='tag'>{`<h4>`}</i>
+          front-end developer
+          <i className='tag'>{`<h4/>`}</i>
+        </h4>
       </div>
 
-      <Projects />
-      <Contact />
+      {/* <Projects />
+      <Contact /> */}
     </div>
   )
 }

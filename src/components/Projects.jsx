@@ -15,27 +15,25 @@ const Projects = () => {
       github:
         'https://github.com/NikkiDev/eAcademy-popup-with-handling-outside-click',
       netlify: 'https://eacademy-react-outside-click.netlify.app',
-      img:
-        'https://d33wubrfki0l68.cloudfront.net/607cd37939599b369e421e3e/screenshot_2021-04-19-00-50-06-0000.png',
+      img: 'https://i2.paste.pics/90f859142fbe4d5244c508c79d822fdd.png',
     },
     {
       name: 'React Context-Menu',
       github: 'https://github.com/NikkiDev/eAcademy-context-menu',
       netlify: 'https://eacademy-react-context-menu.netlify.app',
-      img:
-        'https://d33wubrfki0l68.cloudfront.net/607cd37939599b369e421e3e/screenshot_2021-04-19-00-50-06-0000.png',
+      img: 'https://i2.paste.pics/cacad54533aec9aba741e3a1b3ba28bc.png',
     },
     {
       name: 'React Twitter Post',
       github: 'https://github.com/NikkiDev/eAcademy-imitated-twitter-posts',
       img:
-        'https://d33wubrfki0l68.cloudfront.net/607cd37939599b369e421e3e/screenshot_2021-04-19-00-50-06-0000.png',
+        'https://d33wubrfki0l68.cloudfront.net/6090334b68a5b40da9065eb1/screenshot_2021-05-03-17-32-27-0000.png',
     },
     {
       name: 'React Portfolio',
       github: 'https://github.com/NikkiDev/eAcademy-portfolio',
       img:
-        'https://d33wubrfki0l68.cloudfront.net/607cd37939599b369e421e3e/screenshot_2021-04-19-00-50-06-0000.png',
+        'https://d33wubrfki0l68.cloudfront.net/608d13e2425be5f93eca9c44/screenshot_2021-05-01-08-41-22-0000.png',
     },
     {
       name: 'React Quizz App',
@@ -62,7 +60,11 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-      <h1>recent works</h1>
+      <h1>
+        <i className='tag'>{`<h1>`}</i>
+        Recent Works
+        <i className='tag'>{`<h1/>`}</i>
+      </h1>
       <div className='project-container'>
         {projects.map((project, idx) => {
           return (

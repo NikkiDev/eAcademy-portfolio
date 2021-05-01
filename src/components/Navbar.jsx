@@ -6,22 +6,42 @@ const Navbar = () => {
       <ul className='nav-list'>
         <li className='list-item'>
           <Link to='/'>
-            <span>{`<home />`}</span>
+            <span>
+              {' '}
+              <i className='tag'>{`<`}</i>
+              home
+              <i className='tag'>{`/>`}</i>
+            </span>
           </Link>
         </li>
         <li className='list-item'>
           <Link to='/about'>
-            <span>{`<about me />`}</span>
+            <span>
+              {' '}
+              <i className='tag'>{`<`}</i>
+              about
+              <i className='tag'>{`/>`}</i>
+            </span>
           </Link>
         </li>
         <li className='list-item'>
           <Link to='/projects'>
-            <span>{`<projects />`}</span>
+            <span>
+              {' '}
+              <i className='tag'>{`<`}</i>
+              projects
+              <i className='tag'>{`/>`}</i>
+            </span>
           </Link>
         </li>
         <li className='list-item'>
           <Link to='/contact'>
-            <span>{`<contact />`}</span>
+            <span>
+              {' '}
+              <i className='tag'>{`<`}</i>
+              contact
+              <i className='tag'>{`/>`}</i>
+            </span>
           </Link>
         </li>
       </ul>

@@ -4,6 +4,7 @@ const Project = (props) => {
   return (
     <div className='project'>
       <h3>{props.name}</h3>
+
       <div className='project-img'>
         <a href={props.urlNet}>
           <img src={props.img} alt='some' />
