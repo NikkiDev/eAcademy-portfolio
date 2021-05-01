@@ -19,7 +19,6 @@ html {
 body {
   background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+CjxmaWx0ZXIgaWQ9Im4iPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjQiIG51bU9jdGF2ZXM9IjEwIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KPC9maWx0ZXI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMDAwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWx0ZXI9InVybCgjbikiIG9wYWNpdHk9IjAuMiI+PC9yZWN0Pgo8L3N2Zz4=');
   animation: animate 0.5s linear infinite;
-  overflow: hidden;
 
   &::-webkit-scrollbar {
     display: none;
@@ -35,7 +34,7 @@ body {
 }
 .nav-container {
   position: fixed;
-  right: 0.5em;
+  right: 1em;
   top: 0.5em;
   .nav-list {
     display: flex;
@@ -44,6 +43,7 @@ body {
     .list-item {
       padding: 1rem;
       transition: all 0.3s ease-out;
+      opacity: 0;
       &:hover {
         color: #fff;
         transform: scale(1.1);
@@ -59,6 +59,18 @@ body {
       }
     }
   }
+}
+.burger {
+  background: none;
+
+  position: fixed;
+  right: 0.5em;
+  top: 0.4em;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
 }
 
 .home {
